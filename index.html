@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+   <head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+       <title>Sakura</title>
+        <meta name="keywords" content="Sakura" />
+        <meta name="description" content="Sakura" />
+        <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/yuagonc/Cloudflare_Worker_Index/style/images/img/Mashiro .ico">
+        <link rel="icon" href="https://cdn.jsdelivr.net/gh/yuagonc/Cloudflare_Worker_Index/style/images/img/Mashiro.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/yuagonc/Cloudflare_Worker_Index/style/images/img/Mashiro.ico" type="image/x-icon">  
+        <link href="https://cdn.jsdelivr.net/gh/yuagonc/Cloudflare_Worker_Index@3.0/style/css/white.css" rel="stylesheet" type="text/css" />
+        <!-- <link href="./style/css/white.css" rel="stylesheet" type="text/css" /> -->
+    </head>
+     <body>
+        <div id="show">
+         <p>
+           <img style="border-radius:50%;max-width:100px;max-height:100px;" src=https://cdn.jsdelivr.net/gh/yuagonc/Cloudflare_Worker_Index/style/images/img/Mashiro_head.jpg></p>
+           <h1 style="color:#000;"><strong>Sakura</strong></h1>
+         <p style="font-size:3vh;color:#000;">呐！你想变成什么颜色</p>
+
+         <div class="search" id = "search_div">
+            <div style="margin:0 auto;height: 40px; width : 80%; padding-bottom:10px" id ="search_child_div"> 
+            <form action="https://cf.sakurasou.life/" id = "form_skip" onsubmit="return false">
+             <img src="https://cdn.jsdelivr.net/gh/yuagonc/Cloudflare_Worker_Index/style/images/img/Dl_Logo.png" alt="" >
+             <input type="text" name="" style="background-color:#0000006b;" id = "url_dl" onkeydown="keyup_submit(event);">
+             <!-- placeholder="请输入搜索条件" -->
+             <input type="button" value="下载" onclick="my_skip()" style="background-color:#000000ab;color:#aaa;">
+            
+             <script>
+               function my_skip() {
+               //   var x = document.getElementById("form_skip");
+               //   var text = "";
+               //   var i;
+               //   for (i = 0; i < x.length ;i++) {
+               //     text += x.elements[i].value + "<br>";
+               //   }
+                 var x = document.getElementById("url_dl");
+                 window.open("https://cf.sakurasou.life/" + x.value, "_blank");   
+               }
+               function keyup_submit(e){ 
+               var evt = window.event || e; 
+                  if (evt.keyCode == 13){
+                     var x = document.getElementById("url_dl");
+                 window.open("https://cf.sakurasou.life/" + x.value, "_blank"); 
+                  }
+               }
+               </script>
+
+            
+
+            </form>
+            </div> 
+           </div>
+         <p style="line-height:3;">
+           <a style="border-radius:10px;padding:7px 30px;color:#000;border-style:solid;text-decoration:none;" href="https://vsix.su/">首页</a>
+           <a style="border-radius:10px;padding:7px 30px;color:#000;border-style:solid;text-decoration:none;" href="https://vsix.su/">博客</a>
+		     <a style="border-radius:10px;padding:7px 30px;color:#000;border-style:solid;text-decoration:none;" href="https://cdn.jsdelivr.net/gh/yuagonc/Cloudflare_Worker_Index/Github/README.md">Git说明</a>
+		     <a style="border-radius:10px;padding:7px 30px;color:#000;border-style:solid;text-decoration:none;" href="https://cdn.jsdelivr.net/gh/yuagonc/Cloudflare_Worker_Index/README.md">自选加速</a>
+         </p>
+         <p>
+            <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+            <span style="color:#bd8787;">你的IP:<script>
+               document.write(returnCitySN["cip"])
+            </script></span>
+         </p>
+         <p style="color:#000;">你的地址:
+            <script>document.write(returnCitySN["cname"])</script>
+            © 
+            <a style="text-decoration:none;color:#000;" href="https://vsix.su/">OD</a>
+            .版权所有
+         </p>
+            <script type="text/javascript" color="0,0,0" opacity='0.7' zIndex="-2" count="200" src="https://cdn.jsdelivr.net/gh/yuagonc/Cloudflare_Worker_Index/style/js/canvas-nest.min.js"></script>
+        </div>
+     
+</body>
+</html>

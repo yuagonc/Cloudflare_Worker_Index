@@ -1,0 +1,180 @@
+
+/* *{
+margin: 0;
+padding: 0;
+}  */
+/*body{
+width: 100vw;
+height: 100vh;
+background: radial-gradient(at center,
+#3498db,#2980b9);
+display: flex;
+justify-content: center;
+align-items: center;
+} */
+div.search{
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    }
+    div.search form{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+    
+    @media screen and (max-width: 630px) 
+    {
+        div.search form input:nth-child(2){
+            /* display: inline-block; */
+            width: 80%;
+            height: 100%;
+            font-size: 16px;
+            text-indent: 40px;
+            border: none;
+            /* float: left; */
+            margin: 0;
+            padding: 0;
+            padding: 0;
+            }
+        div.search form input:nth-child(3){
+                /* display: inline-block; */
+                float: right;
+                width: 20%;
+                height: 100%;
+                font-size: 16px;
+                letter-spacing: 3px;
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+            div.search{
+                height: 30px !important;
+            }
+            #search_child_div
+            {
+                height: 30px !important;
+            }
+            div.search form img  
+            {
+                margin-top: 5px !important;
+                margin-left: 5px !important;
+            }
+    }
+
+    @media screen and (max-width: 950px) and (min-width : 630px) 
+    {
+        div.search form input:nth-child(2){
+            /* display: inline-block; */
+            width: 80%;
+            height: 100%;
+            font-size: 16px;
+            text-indent: 40px;
+            border: none;
+            /* float: left; */
+            margin: 0;
+            padding: 0;
+            padding: 0;
+            }
+        div.search form input:nth-child(3){
+                /* display: inline-block; */
+                float: right;
+                width: 20%;
+                height: 100%;
+                font-size: 20px;
+                letter-spacing: 5px;
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+    }
+    
+    @media screen and (max-width: 2096px) and (min-width : 950px) 
+    {
+        div.search form input:nth-child(2){
+            /* display: inline-block; */
+            width: 534px;
+            height: 100%;
+            font-size: 16px;
+            text-indent: 40px;
+            border: none;
+            /* float: left; */
+            margin: 0;
+            padding: 0;
+            padding: 0;
+            }
+        div.search form input:nth-child(3){
+                /* display: inline-block; */
+                float: right;
+                width: 133px;
+                height: 100%;
+                font-size: 20px;
+                letter-spacing: 5px;
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+            #search_child_div
+            {
+                width: 667px !important;
+            }
+    }
+    
+    
+    /* div.search form input:nth-child(2){
+    width: 80%;
+    height: 100%;
+    font-size: 16px;
+    text-indent: 40px;
+    border: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    }
+    div.search form input:nth-child(3){
+    width: 100px;
+    height: 100%;
+    font-size: 16px;
+    letter-spacing: 5px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    } */
+    div.search form img{
+    /* position: absolute; */
+    position: absolute;
+    /* float: left; */
+    /* left: 50vw; */
+    /* transform: translateX(-250px); */
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 20px;
+    padding: 0;
+    }
+    
+    body
+    {
+        padding:12% 5% 5% 5%;
+        background-image:url(https://cdn.jsdelivr.net/gh/yuagonc/Cloudflare_Worker_Index/style/images/img/background.png);
+        background-repeat:no-repeat;
+        background-position:50% 35%;
+        background-attachment:fixed;
+        background-size:auto 100%;
+    }
+    
+    #show
+    {
+        text-align:center;
+        border-width:1px;
+        border-style:solid;
+        border-color:rgb(2, 204, 245);
+        background-color:#ffffff9b;
+        border-radius:20px;
+    }
+
